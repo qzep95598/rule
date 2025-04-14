@@ -6,6 +6,10 @@
 # PROCESS-NAME: 1
 # USER-AGENT: 2
 # TOTAL: 50
+DOMAIN-SUFFIX,prd.api.discomax.com
+DOMAIN-SUFFIX,media.max.com
+DOMAIN-SUFFIX,prd.api.max.com
+DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
 DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN-SUFFIX,cinemax.com
