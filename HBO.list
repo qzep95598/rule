@@ -6,8 +6,7 @@
 # PROCESS-NAME: 1
 # USER-AGENT: 2
 # TOTAL: 50
-DOMAIN-SUFFIX,cdn.prd.api.discomax.com
-DOMAIN-SUFFIX,prd.api.discomax.com
+DOMAIN-SUFFIX,discomax.com
 DOMAIN-SUFFIX,media.max.com
 DOMAIN-SUFFIX,prd.api.max.com
 DOMAIN-SUFFIX,max.com
