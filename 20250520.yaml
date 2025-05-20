@@ -1,0 +1,976 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: "[SS] JP01", server: cn00.mynode.me, port: 8802, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] TW01", server: cn00.mynode.me, port: 8801, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] US01", server: cn00.mynode.me, port: 8803, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 「官 网」iplc.vip", server: cn01.mynode.me, port: 8101, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇦🇷 阿根廷", server: cn17.mynode.me, port: 8609, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇦🇺 澳洲", server: cn17.mynode.me, port: 8603, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇧🇷 巴西", server: cn17.mynode.me, port: 8607, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇦 加拿大", server: cn17.mynode.me, port: 8612, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省01", server: cn10.mynode.me, port: 8301, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省02", server: cn10.mynode.me, port: 8302, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省03", server: cn10.mynode.me, port: 8303, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省04", server: cn10.mynode.me, port: 8304, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省05", server: cn10.mynode.me, port: 8305, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇳 台湾省06", server: cn10.mynode.me, port: 8306, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇨🇴 哥伦比亚", server: cn17.mynode.me, port: 8619, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇩🇪 德国", server: cn17.mynode.me, port: 8605, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇫🇷 法国", server: cn17.mynode.me, port: 8610, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇬🇧 英国01", server: cn17.mynode.me, port: 8601, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港01", server: cn01.mynode.me, port: 8101, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港02", server: cn01.mynode.me, port: 8102, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港03", server: cn01.mynode.me, port: 8103, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港04", server: cn02.mynode.me, port: 8104, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港05", server: cn02.mynode.me, port: 8105, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港06", server: cn02.mynode.me, port: 8106, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港07", server: cn02.mynode.me, port: 8107, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港08", server: cn02.mynode.me, port: 8108, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港09", server: cn02.mynode.me, port: 8109, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港10", server: cn02.mynode.me, port: 8110, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港11", server: cn03.mynode.me, port: 8111, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港12", server: cn03.mynode.me, port: 8112, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港13", server: cn03.mynode.me, port: 8113, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港14", server: cn03.mynode.me, port: 8114, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港15", server: cn03.mynode.me, port: 8115, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港16", server: cn04.mynode.me, port: 8116, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港17", server: cn04.mynode.me, port: 8117, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港18", server: cn04.mynode.me, port: 8118, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港19", server: cn04.mynode.me, port: 8119, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港20", server: cn04.mynode.me, port: 8120, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港21", server: cn05.mynode.me, port: 8121, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港22", server: cn05.mynode.me, port: 8122, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港23", server: cn05.mynode.me, port: 8123, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港24", server: cn05.mynode.me, port: 8124, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港25", server: cn05.mynode.me, port: 8125, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇭🇰 香港26", server: cn05.mynode.me, port: 8126, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇮🇱 以色列", server: cn17.mynode.me, port: 8615, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇮🇳 印度", server: cn17.mynode.me, port: 8606, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇮🇹 意大利", server: cn17.mynode.me, port: 8624, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本01", server: cn11.mynode.me, port: 8401, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本02", server: cn11.mynode.me, port: 8402, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本03", server: cn11.mynode.me, port: 8403, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本04", server: cn12.mynode.me, port: 8404, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本05", server: cn12.mynode.me, port: 8405, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本06", server: cn12.mynode.me, port: 8406, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本07", server: cn12.mynode.me, port: 8407, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本08", server: cn13.mynode.me, port: 8408, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本09", server: cn13.mynode.me, port: 8409, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本10", server: cn14.mynode.me, port: 8410, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本11", server: cn14.mynode.me, port: 8411, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本12", server: cn14.mynode.me, port: 8412, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇯🇵 日本13", server: cn14.mynode.me, port: 8413, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇰🇷 韩国", server: cn17.mynode.me, port: 8602, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇲🇾 马来西亚", server: cn17.mynode.me, port: 8618, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇳🇬 尼日利亚", server: cn17.mynode.me, port: 8625, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇳🇱 荷兰", server: cn17.mynode.me, port: 8604, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇵🇭 菲律宾01", server: cn06.mynode.me, port: 8231, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇵🇭 菲律宾02", server: cn06.mynode.me, port: 8232, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇵🇭 菲律宾03", server: cn06.mynode.me, port: 8233, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇵🇰 巴基斯坦", server: cn17.mynode.me, port: 8614, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇷🇺 俄罗斯", server: cn17.mynode.me, port: 8613, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡01", server: cn06.mynode.me, port: 8201, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡02", server: cn06.mynode.me, port: 8202, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡03", server: cn06.mynode.me, port: 8203, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡04", server: cn06.mynode.me, port: 8204, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡05", server: cn06.mynode.me, port: 8205, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡06", server: cn07.mynode.me, port: 8206, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡07", server: cn07.mynode.me, port: 8207, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡08", server: cn07.mynode.me, port: 8208, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡09", server: cn08.mynode.me, port: 8209, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡10", server: cn08.mynode.me, port: 8210, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡11", server: cn08.mynode.me, port: 8211, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡12", server: cn08.mynode.me, port: 8212, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡13", server: cn08.mynode.me, port: 8213, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡14", server: cn09.mynode.me, port: 8214, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡15", server: cn09.mynode.me, port: 8215, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡16", server: cn09.mynode.me, port: 8216, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡17", server: cn09.mynode.me, port: 8217, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇸🇬 新加坡18", server: cn09.mynode.me, port: 8218, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇹🇭 泰国", server: cn17.mynode.me, port: 8616, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇹🇷 土耳其", server: cn17.mynode.me, port: 8608, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国01", server: cn15.mynode.me, port: 8501, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国02", server: cn15.mynode.me, port: 8502, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国03", server: cn15.mynode.me, port: 8503, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国04", server: cn15.mynode.me, port: 8504, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国05", server: cn15.mynode.me, port: 8505, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国06", server: cn15.mynode.me, port: 8506, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国07", server: cn16.mynode.me, port: 8507, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国08", server: cn16.mynode.me, port: 8508, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国09", server: cn16.mynode.me, port: 8509, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国10", server: cn16.mynode.me, port: 8510, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国11", server: cn16.mynode.me, port: 8511, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国12", server: cn16.mynode.me, port: 8512, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国13", server: cn16.mynode.me, port: 8513, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国14", server: cn16.mynode.me, port: 8514, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国15", server: cn16.mynode.me, port: 8515, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国16", server: cn16.mynode.me, port: 8516, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国17", server: cn16.mynode.me, port: 8517, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国18", server: cn16.mynode.me, port: 8518, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国19", server: cn18.mynode.me, port: 8519, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国20", server: cn18.mynode.me, port: 8520, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国21", server: cn18.mynode.me, port: 8521, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇺🇸 美国22", server: cn18.mynode.me, port: 8522, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: "[SS] 🇻🇳 越南", server: cn17.mynode.me, port: 8622, type: ss, cipher: chacha20-ietf, password: passwd, plugin: obfs, plugin-opts: {mode: http, host: 24733-TiA2O3BR.download.microsoft.com}, udp: true}
+  - {name: IP2WORLD, server: 23.133.8.229, port: 2333, type: socks5, username: chat95598, password: ichat95598, skip-cert-verify: true, udp: true}  
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ⛓️ Chains  
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - "[SS] JP01"
+      - "[SS] TW01"
+      - "[SS] US01"
+      - "[SS] 「官 网」iplc.vip"
+      - "[SS] 🇦🇷 阿根廷"
+      - "[SS] 🇦🇺 澳洲"
+      - "[SS] 🇧🇷 巴西"
+      - "[SS] 🇨🇦 加拿大"
+      - "[SS] 🇨🇳 台湾省01"
+      - "[SS] 🇨🇳 台湾省02"
+      - "[SS] 🇨🇳 台湾省03"
+      - "[SS] 🇨🇳 台湾省04"
+      - "[SS] 🇨🇳 台湾省05"
+      - "[SS] 🇨🇳 台湾省06"
+      - "[SS] 🇨🇴 哥伦比亚"
+      - "[SS] 🇩🇪 德国"
+      - "[SS] 🇫🇷 法国"
+      - "[SS] 🇬🇧 英国01"
+      - "[SS] 🇭🇰 香港01"
+      - "[SS] 🇭🇰 香港02"
+      - "[SS] 🇭🇰 香港03"
+      - "[SS] 🇭🇰 香港04"
+      - "[SS] 🇭🇰 香港05"
+      - "[SS] 🇭🇰 香港06"
+      - "[SS] 🇭🇰 香港07"
+      - "[SS] 🇭🇰 香港08"
+      - "[SS] 🇭🇰 香港09"
+      - "[SS] 🇭🇰 香港10"
+      - "[SS] 🇭🇰 香港11"
+      - "[SS] 🇭🇰 香港12"
+      - "[SS] 🇭🇰 香港13"
+      - "[SS] 🇭🇰 香港14"
+      - "[SS] 🇭🇰 香港15"
+      - "[SS] 🇭🇰 香港16"
+      - "[SS] 🇭🇰 香港17"
+      - "[SS] 🇭🇰 香港18"
+      - "[SS] 🇭🇰 香港19"
+      - "[SS] 🇭🇰 香港20"
+      - "[SS] 🇭🇰 香港21"
+      - "[SS] 🇭🇰 香港22"
+      - "[SS] 🇭🇰 香港23"
+      - "[SS] 🇭🇰 香港24"
+      - "[SS] 🇭🇰 香港25"
+      - "[SS] 🇭🇰 香港26"
+      - "[SS] 🇮🇱 以色列"
+      - "[SS] 🇮🇳 印度"
+      - "[SS] 🇮🇹 意大利"
+      - "[SS] 🇯🇵 日本01"
+      - "[SS] 🇯🇵 日本02"
+      - "[SS] 🇯🇵 日本03"
+      - "[SS] 🇯🇵 日本04"
+      - "[SS] 🇯🇵 日本05"
+      - "[SS] 🇯🇵 日本06"
+      - "[SS] 🇯🇵 日本07"
+      - "[SS] 🇯🇵 日本08"
+      - "[SS] 🇯🇵 日本09"
+      - "[SS] 🇯🇵 日本10"
+      - "[SS] 🇯🇵 日本11"
+      - "[SS] 🇯🇵 日本12"
+      - "[SS] 🇯🇵 日本13"
+      - "[SS] 🇰🇷 韩国"
+      - "[SS] 🇲🇾 马来西亚"
+      - "[SS] 🇳🇬 尼日利亚"
+      - "[SS] 🇳🇱 荷兰"
+      - "[SS] 🇵🇭 菲律宾01"
+      - "[SS] 🇵🇭 菲律宾02"
+      - "[SS] 🇵🇭 菲律宾03"
+      - "[SS] 🇵🇰 巴基斯坦"
+      - "[SS] 🇷🇺 俄罗斯"
+      - "[SS] 🇸🇬 新加坡01"
+      - "[SS] 🇸🇬 新加坡02"
+      - "[SS] 🇸🇬 新加坡03"
+      - "[SS] 🇸🇬 新加坡04"
+      - "[SS] 🇸🇬 新加坡05"
+      - "[SS] 🇸🇬 新加坡06"
+      - "[SS] 🇸🇬 新加坡07"
+      - "[SS] 🇸🇬 新加坡08"
+      - "[SS] 🇸🇬 新加坡09"
+      - "[SS] 🇸🇬 新加坡10"
+      - "[SS] 🇸🇬 新加坡11"
+      - "[SS] 🇸🇬 新加坡12"
+      - "[SS] 🇸🇬 新加坡13"
+      - "[SS] 🇸🇬 新加坡14"
+      - "[SS] 🇸🇬 新加坡15"
+      - "[SS] 🇸🇬 新加坡16"
+      - "[SS] 🇸🇬 新加坡17"
+      - "[SS] 🇸🇬 新加坡18"
+      - "[SS] 🇹🇭 泰国"
+      - "[SS] 🇹🇷 土耳其"
+      - "[SS] 🇺🇸 美国01"
+      - "[SS] 🇺🇸 美国02"
+      - "[SS] 🇺🇸 美国03"
+      - "[SS] 🇺🇸 美国04"
+      - "[SS] 🇺🇸 美国05"
+      - "[SS] 🇺🇸 美国06"
+      - "[SS] 🇺🇸 美国07"
+      - "[SS] 🇺🇸 美国08"
+      - "[SS] 🇺🇸 美国09"
+      - "[SS] 🇺🇸 美国10"
+      - "[SS] 🇺🇸 美国11"
+      - "[SS] 🇺🇸 美国12"
+      - "[SS] 🇺🇸 美国13"
+      - "[SS] 🇺🇸 美国14"
+      - "[SS] 🇺🇸 美国15"
+      - "[SS] 🇺🇸 美国16"
+      - "[SS] 🇺🇸 美国17"
+      - "[SS] 🇺🇸 美国18"
+      - "[SS] 🇺🇸 美国19"
+      - "[SS] 🇺🇸 美国20"
+      - "[SS] 🇺🇸 美国21"
+      - "[SS] 🇺🇸 美国22"
+      - "[SS] 🇻🇳 越南"
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] JP01"
+      - "[SS] TW01"
+      - "[SS] US01"
+      - "[SS] 「官 网」iplc.vip"
+      - "[SS] 🇦🇷 阿根廷"
+      - "[SS] 🇦🇺 澳洲"
+      - "[SS] 🇧🇷 巴西"
+      - "[SS] 🇨🇦 加拿大"
+      - "[SS] 🇨🇳 台湾省01"
+      - "[SS] 🇨🇳 台湾省02"
+      - "[SS] 🇨🇳 台湾省03"
+      - "[SS] 🇨🇳 台湾省04"
+      - "[SS] 🇨🇳 台湾省05"
+      - "[SS] 🇨🇳 台湾省06"
+      - "[SS] 🇨🇴 哥伦比亚"
+      - "[SS] 🇩🇪 德国"
+      - "[SS] 🇫🇷 法国"
+      - "[SS] 🇬🇧 英国01"
+      - "[SS] 🇭🇰 香港01"
+      - "[SS] 🇭🇰 香港02"
+      - "[SS] 🇭🇰 香港03"
+      - "[SS] 🇭🇰 香港04"
+      - "[SS] 🇭🇰 香港05"
+      - "[SS] 🇭🇰 香港06"
+      - "[SS] 🇭🇰 香港07"
+      - "[SS] 🇭🇰 香港08"
+      - "[SS] 🇭🇰 香港09"
+      - "[SS] 🇭🇰 香港10"
+      - "[SS] 🇭🇰 香港11"
+      - "[SS] 🇭🇰 香港12"
+      - "[SS] 🇭🇰 香港13"
+      - "[SS] 🇭🇰 香港14"
+      - "[SS] 🇭🇰 香港15"
+      - "[SS] 🇭🇰 香港16"
+      - "[SS] 🇭🇰 香港17"
+      - "[SS] 🇭🇰 香港18"
+      - "[SS] 🇭🇰 香港19"
+      - "[SS] 🇭🇰 香港20"
+      - "[SS] 🇭🇰 香港21"
+      - "[SS] 🇭🇰 香港22"
+      - "[SS] 🇭🇰 香港23"
+      - "[SS] 🇭🇰 香港24"
+      - "[SS] 🇭🇰 香港25"
+      - "[SS] 🇭🇰 香港26"
+      - "[SS] 🇮🇱 以色列"
+      - "[SS] 🇮🇳 印度"
+      - "[SS] 🇮🇹 意大利"
+      - "[SS] 🇯🇵 日本01"
+      - "[SS] 🇯🇵 日本02"
+      - "[SS] 🇯🇵 日本03"
+      - "[SS] 🇯🇵 日本04"
+      - "[SS] 🇯🇵 日本05"
+      - "[SS] 🇯🇵 日本06"
+      - "[SS] 🇯🇵 日本07"
+      - "[SS] 🇯🇵 日本08"
+      - "[SS] 🇯🇵 日本09"
+      - "[SS] 🇯🇵 日本10"
+      - "[SS] 🇯🇵 日本11"
+      - "[SS] 🇯🇵 日本12"
+      - "[SS] 🇯🇵 日本13"
+      - "[SS] 🇰🇷 韩国"
+      - "[SS] 🇲🇾 马来西亚"
+      - "[SS] 🇳🇬 尼日利亚"
+      - "[SS] 🇳🇱 荷兰"
+      - "[SS] 🇵🇭 菲律宾01"
+      - "[SS] 🇵🇭 菲律宾02"
+      - "[SS] 🇵🇭 菲律宾03"
+      - "[SS] 🇵🇰 巴基斯坦"
+      - "[SS] 🇷🇺 俄罗斯"
+      - "[SS] 🇸🇬 新加坡01"
+      - "[SS] 🇸🇬 新加坡02"
+      - "[SS] 🇸🇬 新加坡03"
+      - "[SS] 🇸🇬 新加坡04"
+      - "[SS] 🇸🇬 新加坡05"
+      - "[SS] 🇸🇬 新加坡06"
+      - "[SS] 🇸🇬 新加坡07"
+      - "[SS] 🇸🇬 新加坡08"
+      - "[SS] 🇸🇬 新加坡09"
+      - "[SS] 🇸🇬 新加坡10"
+      - "[SS] 🇸🇬 新加坡11"
+      - "[SS] 🇸🇬 新加坡12"
+      - "[SS] 🇸🇬 新加坡13"
+      - "[SS] 🇸🇬 新加坡14"
+      - "[SS] 🇸🇬 新加坡15"
+      - "[SS] 🇸🇬 新加坡16"
+      - "[SS] 🇸🇬 新加坡17"
+      - "[SS] 🇸🇬 新加坡18"
+      - "[SS] 🇹🇭 泰国"
+      - "[SS] 🇹🇷 土耳其"
+      - "[SS] 🇺🇸 美国01"
+      - "[SS] 🇺🇸 美国02"
+      - "[SS] 🇺🇸 美国03"
+      - "[SS] 🇺🇸 美国04"
+      - "[SS] 🇺🇸 美国05"
+      - "[SS] 🇺🇸 美国06"
+      - "[SS] 🇺🇸 美国07"
+      - "[SS] 🇺🇸 美国08"
+      - "[SS] 🇺🇸 美国09"
+      - "[SS] 🇺🇸 美国10"
+      - "[SS] 🇺🇸 美国11"
+      - "[SS] 🇺🇸 美国12"
+      - "[SS] 🇺🇸 美国13"
+      - "[SS] 🇺🇸 美国14"
+      - "[SS] 🇺🇸 美国15"
+      - "[SS] 🇺🇸 美国16"
+      - "[SS] 🇺🇸 美国17"
+      - "[SS] 🇺🇸 美国18"
+      - "[SS] 🇺🇸 美国19"
+      - "[SS] 🇺🇸 美国20"
+      - "[SS] 🇺🇸 美国21"
+      - "[SS] 🇺🇸 美国22"
+      - "[SS] 🇻🇳 越南"
+  - name: ⛓️ Chains
+    type: relay
+    proxies:
+      - 🚀 手动切换
+      - IP2WORLD      
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - ⛓️ Chains
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎬 HBOMAX
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎬 TikTok
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎬 Disney
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇨🇳 台湾节点
+      - 🇭🇰 香港节点
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软Bing
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎶 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  # - name: 🛑 广告拦截
+    # type: select
+    # proxies:
+      # - REJECT
+      # - DIRECT
+  # - name: 🍃 应用净化
+    # type: select
+    # proxies:
+      # - REJECT
+      # - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] 🇭🇰 香港01"
+      - "[SS] 🇭🇰 香港02"
+      - "[SS] 🇭🇰 香港03"
+      - "[SS] 🇭🇰 香港04"
+      - "[SS] 🇭🇰 香港05"
+      - "[SS] 🇭🇰 香港06"
+      - "[SS] 🇭🇰 香港07"
+      - "[SS] 🇭🇰 香港08"
+      - "[SS] 🇭🇰 香港09"
+      - "[SS] 🇭🇰 香港10"
+      - "[SS] 🇭🇰 香港11"
+      - "[SS] 🇭🇰 香港12"
+      - "[SS] 🇭🇰 香港13"
+      - "[SS] 🇭🇰 香港14"
+      - "[SS] 🇭🇰 香港15"
+      - "[SS] 🇭🇰 香港16"
+      - "[SS] 🇭🇰 香港17"
+      - "[SS] 🇭🇰 香港18"
+      - "[SS] 🇭🇰 香港19"
+      - "[SS] 🇭🇰 香港20"
+      - "[SS] 🇭🇰 香港21"
+      - "[SS] 🇭🇰 香港22"
+      - "[SS] 🇭🇰 香港23"
+      - "[SS] 🇭🇰 香港24"
+      - "[SS] 🇭🇰 香港25"
+      - "[SS] 🇭🇰 香港26"
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] JP01"
+      - "[SS] 🇯🇵 日本01"
+      - "[SS] 🇯🇵 日本02"
+      - "[SS] 🇯🇵 日本03"
+      - "[SS] 🇯🇵 日本04"
+      - "[SS] 🇯🇵 日本05"
+      - "[SS] 🇯🇵 日本06"
+      - "[SS] 🇯🇵 日本07"
+      - "[SS] 🇯🇵 日本08"
+      - "[SS] 🇯🇵 日本09"
+      - "[SS] 🇯🇵 日本10"
+      - "[SS] 🇯🇵 日本11"
+      - "[SS] 🇯🇵 日本12"
+      - "[SS] 🇯🇵 日本13"
+      - "[SS] 🇳🇬 尼日利亚"
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - "[SS] US01"
+      - "[SS] 🇺🇸 美国01"
+      - "[SS] 🇺🇸 美国02"
+      - "[SS] 🇺🇸 美国03"
+      - "[SS] 🇺🇸 美国04"
+      - "[SS] 🇺🇸 美国05"
+      - "[SS] 🇺🇸 美国06"
+      - "[SS] 🇺🇸 美国07"
+      - "[SS] 🇺🇸 美国08"
+      - "[SS] 🇺🇸 美国09"
+      - "[SS] 🇺🇸 美国10"
+      - "[SS] 🇺🇸 美国11"
+      - "[SS] 🇺🇸 美国12"
+      - "[SS] 🇺🇸 美国13"
+      - "[SS] 🇺🇸 美国14"
+      - "[SS] 🇺🇸 美国15"
+      - "[SS] 🇺🇸 美国16"
+      - "[SS] 🇺🇸 美国17"
+      - "[SS] 🇺🇸 美国18"
+      - "[SS] 🇺🇸 美国19"
+      - "[SS] 🇺🇸 美国20"
+      - "[SS] 🇺🇸 美国21"
+      - "[SS] 🇺🇸 美国22"
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] TW01"
+      - "[SS] 🇨🇳 台湾省01"
+      - "[SS] 🇨🇳 台湾省02"
+      - "[SS] 🇨🇳 台湾省03"
+      - "[SS] 🇨🇳 台湾省04"
+      - "[SS] 🇨🇳 台湾省05"
+      - "[SS] 🇨🇳 台湾省06"
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] 🇸🇬 新加坡01"
+      - "[SS] 🇸🇬 新加坡02"
+      - "[SS] 🇸🇬 新加坡03"
+      - "[SS] 🇸🇬 新加坡04"
+      - "[SS] 🇸🇬 新加坡05"
+      - "[SS] 🇸🇬 新加坡06"
+      - "[SS] 🇸🇬 新加坡07"
+      - "[SS] 🇸🇬 新加坡08"
+      - "[SS] 🇸🇬 新加坡09"
+      - "[SS] 🇸🇬 新加坡10"
+      - "[SS] 🇸🇬 新加坡11"
+      - "[SS] 🇸🇬 新加坡12"
+      - "[SS] 🇸🇬 新加坡13"
+      - "[SS] 🇸🇬 新加坡14"
+      - "[SS] 🇸🇬 新加坡15"
+      - "[SS] 🇸🇬 新加坡16"
+      - "[SS] 🇸🇬 新加坡17"
+      - "[SS] 🇸🇬 新加坡18"
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[SS] 🇰🇷 韩国"
+  - name: 🎥 奈飞节点
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 手动切换  
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  # - RULE-SET,BanAD,🛑 广告拦截
+  # - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Bing,Ⓜ️ 微软Bing
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,OpenAi,💬 OpenAi
+  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,HBOMax,🎬 HBOMAX
+  - RULE-SET,TikTok,🎬 TikTok
+  - RULE-SET,Disney,🎬 Disney
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,Bahamut,📺 巴哈姆特
+  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0
+    path: ./providers/rule-provider_LocalAreaNetwork.yaml
+    interval: 86400
+  UnBan:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA
+    path: ./providers/rule-provider_UnBan.yaml
+    interval: 86400
+  # BanAD:
+    # type: http
+    # behavior: classical
+    # url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA
+    # path: ./providers/rule-provider_BanAD.yaml
+    # interval: 86400
+  # BanProgramAD:
+    # type: http
+    # behavior: classical
+    # url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q
+    # path: ./providers/rule-provider_BanProgramAD.yaml
+    # interval: 86400
+  GoogleFCM:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA
+    path: ./providers/rule-provider_GoogleFCM.yaml
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA
+    path: ./providers/rule-provider_GoogleCN.yaml
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9TdGVhbUNOLmxpc3Q
+    path: ./providers/rule-provider_SteamCN.yaml
+    interval: 86400
+  Bing:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmluZy5saXN0
+    path: ./providers/rule-provider_Bing.yaml
+    interval: 86400
+  OneDrive:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvT25lRHJpdmUubGlzdA
+    path: ./providers/rule-provider_OneDrive.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q
+    path: ./providers/rule-provider_Microsoft.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA
+    path: ./providers/rule-provider_Apple.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA
+    path: ./providers/rule-provider_Telegram.yaml
+    interval: 86400
+  OpenAi:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9PcGVuQWkubGlzdA
+    path: ./providers/rule-provider_OpenAi.yaml
+    interval: 86400
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRFYXNlTXVzaWMubGlzdA
+    path: ./providers/rule-provider_NetEaseMusic.yaml
+    interval: 86400
+  Epic:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9FcGljLmxpc3Q
+    path: ./providers/rule-provider_Epic.yaml
+    interval: 86400
+  Origin:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9PcmlnaW4ubGlzdA
+    path: ./providers/rule-provider_Origin.yaml
+    interval: 86400
+  Sony:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Tb255Lmxpc3Q
+    path: ./providers/rule-provider_Sony.yaml
+    interval: 86400
+  Steam:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9TdGVhbS5saXN0
+    path: ./providers/rule-provider_Steam.yaml
+    interval: 86400
+  Nintendo:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OaW50ZW5kby5saXN0
+    path: ./providers/rule-provider_Nintendo.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Zb3VUdWJlLmxpc3Q
+    path: ./providers/rule-provider_YouTube.yaml
+    interval: 86400
+  HBOMax:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3F6ZXA5NTU5OC9ydWxlL3JlZnMvaGVhZHMvbWFpbi9oYm9tYXgubGlzdA
+    path: ./providers/rule-provider_HBOMax.yaml
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvcmVmcy9oZWFkcy9tYXN0ZXIvcnVsZS9DbGFzaC9UaWtUb2svVGlrVG9rLmxpc3Q
+    path: ./providers/rule-provider_TikTok.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvcmVmcy9oZWFkcy9tYXN0ZXIvcnVsZS9DbGFzaC9EaXNuZXkvRGlzbmV5Lmxpc3Q
+    path: ./providers/rule-provider_Disney.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q
+    path: ./providers/rule-provider_Netflix.yaml
+    interval: 86400
+  Bahamut:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9CYWhhbXV0Lmxpc3Q
+    path: ./providers/rule-provider_Bahamut.yaml
+    interval: 86400
+  BilibiliHMT:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9CaWxpYmlsaUhNVC5saXN0
+    path: ./providers/rule-provider_BilibiliHMT.yaml
+    interval: 86400
+  Bilibili:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9CaWxpYmlsaS5saXN0
+    path: ./providers/rule-provider_Bilibili.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFNZWRpYS5saXN0
+    path: ./providers/rule-provider_ChinaMedia.yaml
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0
+    path: ./providers/rule-provider_ProxyMedia.yaml
+    interval: 86400
+  ProxyGFWlist:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlHRldsaXN0Lmxpc3Q
+    path: ./providers/rule-provider_ProxyGFWlist.yaml
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA
+    path: ./providers/rule-provider_ChinaDomain.yaml
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA
+    path: ./providers/rule-provider_ChinaCompanyIp.yaml
+    interval: 86400
+  Download:
+    type: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvRG93bmxvYWQubGlzdA
+    path: ./providers/rule-provider_Download.yaml
+    interval: 86400
