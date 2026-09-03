@@ -7,4 +7,5 @@ SRC-IP-CIDR,10.10.10.26/32
 
 # 域名关键字匹配
 #DOMAIN-KEYWORD,apple-bing
+DOMAIN-KEYWORD,oraclecloud
 DOMAIN-KEYWORD,oracle
