@@ -53,3 +53,9 @@ DOMAIN-SUFFIX,players.brightcove.net
 DOMAIN-SUFFIX,warnermediacdn.com
 DOMAIN-SUFFIX,youboranqs01.com
 PROCESS-NAME,com.hbo.hbonow
+# HBO Max 新版补充
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,h264.io
+DOMAIN-SUFFIX,wbd.com
+DOMAIN-SUFFIX,warnerbros.com
+DOMAIN-SUFFIX,discoveryplus.com
