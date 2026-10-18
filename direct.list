@@ -13,3 +13,8 @@ IP-CIDR,144.24.78.234/32
 #DOMAIN-KEYWORD,apple-bing
 DOMAIN-KEYWORD,oraclecloud
 DOMAIN-KEYWORD,oracle
+
+# 群晖 DDNS / QuickConnect / 自有域名 直连（避免被 geolocation-!cn 误送代理）
+DOMAIN-SUFFIX,myds.me
+DOMAIN-SUFFIX,quickconnect.to
+DOMAIN-SUFFIX,qzep.pw
